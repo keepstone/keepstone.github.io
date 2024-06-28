@@ -3,100 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keystone.ai - Vendor Intelligence & Supplier Relationships Management</title>
+    <title>Keepstone.ai - Vendor Intelligence & Supplier Relationships Management</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-custom {
-            background-color: #f7f7f7;
+        .hero-bg {
+            background-image: url('https://bizapp.co/assets/images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-<body class="bg-custom text-gray-800">
+<body class="bg-gray-50 text-gray-800">
     <!-- Navigation -->
-    <nav class="bg-white shadow">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-900">Keystone.ai</a>
-            <div>
-                <a href="#" class="text-gray-600 hover:text-gray-900 mx-4">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 mx-4">Features</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 mx-4">Pricing</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 mx-4">Contact</a>
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Keepstone.ai</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Features</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Pricing</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
             </div>
+            <div class="md:hidden">
+                <button id="nav-toggle" class="text-gray-600 focus:outline-none focus:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="nav-menu" class="hidden md:hidden">
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Home</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Features</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Pricing</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-cover bg-center h-screen" style="background-image: url('https://bizapp.co/assets/images/hero-background.jpg')">
-        <div class="container mx-auto h-full flex items-center justify-center">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-white">Keystone.ai</h1>
-                <p class="text-lg text-white mt-4">Vendor Intelligence & Supplier Relationships Management</p>
-                <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Get Started</a>
-            </div>
+    <header class="hero-bg h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold text-white">Keepstone.ai</h1>
+            <p class="text-lg text-white mt-4">Vendor Intelligence & Supplier Relationships Management</p>
+            <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-6 rounded">Get Started</a>
         </div>
     </header>
 
     <!-- Features Section -->
     <section class="container mx-auto px-6 py-16">
         <h2 class="text-3xl font-semibold text-center">Features</h2>
-        <p class="mt-4 text-center">Covering end-to-end procurement: Source to Procure and Procure to Pay.</p>
+        <p class="mt-4 text-center text-gray-600">Covering end-to-end procurement: Source to Procure and Procure to Pay.</p>
         <div class="flex flex-wrap mt-12">
             <!-- Feature 1 -->
             <div class="w-full md:w-1/3 p-4">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-semibold">Vendor Intelligence</h3>
-                    <p class="mt-4">Get insights into vendor performance and reliability.</p>
+                    <p class="mt-4 text-gray-600">Get insights into vendor performance and reliability.</p>
                 </div>
             </div>
             <!-- Feature 2 -->
             <div class="w-full md:w-1/3 p-4">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-semibold">Supplier Relationships</h3>
-                    <p class="mt-4">Manage and nurture supplier relationships efficiently.</p>
+                    <p class="mt-4 text-gray-600">Manage and nurture supplier relationships efficiently.</p>
                 </div>
             </div>
             <!-- Feature 3 -->
             <div class="w-full md:w-1/3 p-4">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-semibold">Agreements Management</h3>
-                    <p class="mt-4">Keep track of all your supplier agreements in one place.</p>
+                    <p class="mt-4 text-gray-600">Keep track of all your supplier agreements in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center">Pricing</h2>
+            <p class="mt-4 text-center text-gray-600">Choose the plan that fits your needs.</p>
+            <div class="flex flex-wrap mt-12 justify-center">
+                <!-- Plan 1 -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold">Basic</h3>
+                        <p class="mt-4 text-gray-600">$19/month</p>
+                        <ul class="mt-4 text-gray-600">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
+                    </div>
+                </div>
+                <!-- Plan 2 -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold">Pro</h3>
+                        <p class="mt-4 text-gray-600">$49/month</p>
+                        <ul class="mt-4 text-gray-600">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
+                    </div>
+                </div>
+                <!-- Plan 3 -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold">Enterprise</h3>
+                        <p class="mt-4 text-gray-600">Custom Pricing</p>
+                        <ul class="mt-4 text-gray-600">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-semibold text-center">Contact Us</h2>
-            <p class="mt-4 text-center">Get in touch with us to learn more about Keystone.ai.</p>
-            <div class="mt-8 max-w-lg mx-auto">
-                <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="mb-4">
-                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
-                    </div>
-                </form>
-            </div>
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-semibold text-center">Contact Us</h2>
+        <p class="mt-4 text-center text-gray-600">Get in touch with us to learn more about Keepstone.ai.</p>
+        <div class="mt-8 max-w-lg mx-auto">
+            <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
+                </div>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-200 py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Keystone.ai. All rights reserved.</p>
+            <p>&copy; 2024 Keepstone.ai. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('nav-toggle').onclick = function () {
+            var navMenu = document.getElementById('nav-menu');
+            if (navMenu.classList.contains('hidden')) {
+                navMenu.classList.remove('hidden');
+            } else {
+                navMenu.classList.add('hidden');
+            }
+        };
+    </script>
 </body>
 </html>
