@@ -3,171 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keepstone.ai - Vendor Intelligence & Supplier Relationships Management</title>
+    <title>Keepstone - Vendor Intelligence and Supplier Relations Management</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .hero-bg {
-            background-image: url('https://bizapp.co/assets/images/hero-background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-900">Keepstone.ai</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Features</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Pricing</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button id="nav-toggle" class="text-gray-600 focus:outline-none focus:text-gray-900">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+<body class="bg-gray-100 text-gray-900">
+<!-- Header -->
+<header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="logo">
+            <img src="logo.png" alt="Keepstone Logo" class="h-8">
         </div>
-        <div id="nav-menu" class="hidden md:hidden">
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Home</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Features</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Pricing</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#home" class="text-gray-700 hover:text-blue-600">Home</a></li>
+            <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+            <li><a href="#features" class="text-gray-700 hover:text-blue-600">Features</a></li>
+            <li><a href="#pricing" class="text-gray-700 hover:text-blue-600">Pricing</a></li>
+            <li><a href="#team" class="text-gray-700 hover:text-blue-600">Team</a></li>
+            <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+        </ul>
+        <div class="flex items-center space-x-4">
+            <a href="#demo" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Schedule a Demo</a>
+            <span class="text-gray-600">Sales: 1-800-123-4567</span>
         </div>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero-bg h-screen flex items-center">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-bold text-white">Keepstone.ai</h1>
-            <p class="text-lg text-white mt-4">Vendor Intelligence & Supplier Relationships Management</p>
-            <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-6 rounded">Get Started</a>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-blue-500 to-green-500 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Revolutionize Your Vendor Management with Keepstone</h1>
+        <p class="text-lg md:text-xl mb-8">Affordable, comprehensive, and easy-to-use Vendor Intelligence and Supplier Relations management</p>
+        <div class="space-x-4">
+            <a href="#get-started" class="bg-white text-blue-600 py-2 px-6 rounded-full font-semibold hover:bg-gray-100">Get Started</a>
+            <a href="#learn-more" class="bg-transparent border border-white py-2 px-6 rounded-full font-semibold hover:bg-white hover:text-blue-600">Learn More</a>
         </div>
-    </header>
-
-    <!-- Features Section -->
-    <section class="container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-semibold text-center">Features</h2>
-        <p class="mt-4 text-center text-gray-600">Covering end-to-end procurement: Source to Procure and Procure to Pay.</p>
-        <div class="flex flex-wrap mt-12">
-            <!-- Feature 1 -->
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Vendor Intelligence</h3>
-                    <p class="mt-4 text-gray-600">Get insights into vendor performance and reliability.</p>
-                </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Supplier Relationships</h3>
-                    <p class="mt-4 text-gray-600">Manage and nurture supplier relationships efficiently.</p>
-                </div>
-            </div>
-            <!-- Feature 3 -->
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Agreements Management</h3>
-                    <p class="mt-4 text-gray-600">Keep track of all your supplier agreements in one place.</p>
-                </div>
-            </div>
+        <div class="mt-12">
+            <img src="hero-illustration.png" alt="Vendor Relationships Illustration" class="mx-auto">
         </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-semibold text-center">Pricing</h2>
-            <p class="mt-4 text-center text-gray-600">Choose the plan that fits your needs.</p>
-            <div class="flex flex-wrap mt-12 justify-center">
-                <!-- Plan 1 -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold">Basic</h3>
-                        <p class="mt-4 text-gray-600">$19/month</p>
-                        <ul class="mt-4 text-gray-600">
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
-                    </div>
-                </div>
-                <!-- Plan 2 -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold">Pro</h3>
-                        <p class="mt-4 text-gray-600">$49/month</p>
-                        <ul class="mt-4 text-gray-600">
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
-                    </div>
-                </div>
-                <!-- Plan 3 -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold">Enterprise</h3>
-                        <p class="mt-4 text-gray-600">Custom Pricing</p>
-                        <ul class="mt-4 text-gray-600">
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded">Choose Plan</a>
-                    </div>
-                </div>
+    </div>
+</section>
+<!-- Features Overview -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="feature text-center">
+                <img src="icon-vendor-directory.png" alt="Vendor Directory Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Vendor Directory</h3>
+                <p class="text-gray-600">Organize and manage all your vendors in one place.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-risk-management.png" alt="Risk Management Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Risk Management</h3>
+                <p class="text-gray-600">Identify and mitigate potential risks proactively.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-automation.png" alt="Automation Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Automation</h3>
+                <p class="text-gray-600">Automate your source-to-procure-to-pay processes.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-performance-tracking.png" alt="Performance Tracking Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Performance Tracking</h3>
+                <p class="text-gray-600">Monitor and evaluate vendor performance effectively.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-semibold text-center">Contact Us</h2>
-        <p class="mt-4 text-center text-gray-600">Get in touch with us to learn more about Keepstone.ai.</p>
-        <div class="mt-8 max-w-lg mx-auto">
-            <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
-                </div>
-            </form>
+<!-- Clients/Partners -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Clients & Partners</h2>
+        <div class="flex justify-center items-center space-x-8">
+            <img src="client-logo1.png" alt="Client Logo 1" class="h-12">
+            <img src="client-logo2.png" alt="Client Logo 2" class="h-12">
+            <img src="client-logo3.png" alt="Client Logo 3" class="h-12">
+            <img src="client-logo4.png" alt="Client Logo 4" class="h-12">
+            <img src="client-logo5.png" alt="Client Logo 5" class="h-12">
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-200 py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Keepstone.ai. All rights reserved.</p>
+<!-- Features Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Powerful Features to Streamline Your Vendor Management</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="feature text-center">
+                <img src="icon-vendor-directory.png" alt="Vendor Directory Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Vendor Directory</h3>
+                <p class="text-gray-600">Centralize your vendor information and streamline communication.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-risk-management.png" alt="Risk Management Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Risk Management</h3>
+                <p class="text-gray-600">Proactively identify and mitigate risks to ensure smooth operations.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-automation.png" alt="Automation Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Automation</h3>
+                <p class="text-gray-600">Automate repetitive tasks to increase efficiency and reduce errors.</p>
+            </div>
+            <div class="feature text-center">
+                <img src="icon-performance-tracking.png" alt="Performance Tracking Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Performance Tracking</h3>
+                <p class="text-gray-600">Track vendor performance metrics to ensure high standards.</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
+<!-- Benefits Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose Keepstone?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="benefit text-center">
+                <img src="icon-affordable.png" alt="Affordable Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Affordable</h3>
+                <p class="text-gray-600">Cost-effective solutions tailored for small to medium-sized businesses.</p>
+            </div>
+            <div class="benefit text-center">
+                <img src="icon-comprehensive.png" alt="Comprehensive Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Comprehensive</h3>
+                <p class="text-gray-600">All-in-one platform covering every aspect of vendor management.</p>
+            </div>
+            <div class="benefit text-center">
+                <img src="icon-easy-to-use.png" alt="Easy to Use Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">Easy to Use</h3>
+                <p class="text-gray-600">User-friendly interface designed for efficiency and ease of use.</p>
+            </div>
+            <div class="benefit text-center">
+                <img src="icon-support.png" alt="Support Icon" class="mx-auto mb-4 h-12">
+                <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                <p class="text-gray-600">Reliable customer support to assist you whenever needed.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script>
-        document.getElementById('nav-toggle').onclick = function () {
-            var navMenu = document.getElementById('nav-menu');
-            if (navMenu.classList.contains('hidden')) {
-                navMenu.classList.remove('hidden');
-            } else {
-                navMenu.classList.add('hidden');
-            }
-        };
-    </script>
+<!-- Testimonials Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="testimonial bg-gray-100 p-6 rounded shadow text-center">
+                <img src="client1.jpg" alt="Client Photo" class="mx-auto mb-4 rounded-full h-24 w-24">
+                <p class="text-gray-600 mb-4">"Keepstone has transformed our vendor management process. It's so easy to use and has saved us a lot of time and money."</p>
+                <h4 class="text-xl font-semibold">John Doe</h4>
+                <p class="text-gray-500">CEO, Example Corp</p>
+            </div>
+            <div class="testimonial bg-gray-100 p-6 rounded shadow text-center">
+                <img src="client2.jpg" alt="Client Photo" class="mx-auto mb-4 rounded-full h-24 w-24">
+                <p class="text-gray-600 mb-4">"The automation features are fantastic! We've reduced errors and improved our overall efficiency."</p>
+                <h4 class="text-xl font-semibold">Jane Smith</h4>
+                <p class="text-gray-500">COO, Acme Inc</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Choose Your Plan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="pricing-tier bg-white p-6 rounded shadow text-center">
+                <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+                <p class="text-4xl font-bold mb-4">$19<span class="text-xl font-medium">/month</span></p>
+                <ul class="text-gray-600 mb-6">
+                    <li class="mb-2">Vendor Directory</li>
+                    <li class="mb-2">Risk Management</li>
+                    <li class="mb-2">Basic Support</li>
+                </ul>
+                <a href="#choose-plan" class="bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700">Choose Plan</a>
+            </div>
+            <div class="pricing-tier bg-white p-6 rounded shadow text-center">
+                <h3 class="text-2xl font-semibold mb-4">Standard</h3>
+                <p class="text-4xl font-bold mb-4">$49<span class="text-xl font-medium">/month</span></p>
+                <ul class="text-gray-600 mb-6">
+                    <li class="mb-2">Everything in Basic</li>
+                    <li class="mb-2">Automation</li>
+                    <li class="mb-2">Performance Tracking</li>
+                    <li class="mb-2">24/7 Support</li>
+                </ul>
+                <a href="#choose-plan" class="bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700">Choose Plan</a>
+            </div>
+            <div class="pricing-tier bg-white p-6 rounded shadow text-center">
+                <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+                <p class="text-4xl font-bold mb-4">$99<span class="text-xl font-medium">/month</span></p>
+                <ul class="text-gray-600 mb-6">
+                    <li class="mb-2">Everything in Standard</li>
+                    <li class="mb-2">Advanced Analytics</li>
+                    <li class="mb-2">Dedicated Account Manager</li>
+                </ul>
+                <a href="#choose-plan" class="bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700">Choose Plan</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+        <div class="about-content text-center">
+            <p class="text-gray-600 mb-8">Keepstone is dedicated to providing top-notch vendor intelligence and supplier relations management solutions for small to medium-sized businesses. Our team of experts brings years of experience in procurement and supply chain management to help you streamline your processes and improve your bottom line.</p>
+            <div class="team-photos">
+                <img src="team-photo.jpg" alt="Team Photo" class="mx-auto rounded shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section class="py-20 bg-blue-600 text-white text-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Vendor Management?</h2>
+        <p class="text-lg mb-8">Sign up now and experience the benefits of Keepstone for yourself.</p>
+        <a href="#get-started" class="bg-white text-blue-600 py-2 px-6 rounded-full font-semibold hover:bg-gray-100">Get Started</a>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+        <form action="submit-form.php" method="post" class="max-w-lg mx-auto bg-white p-8 rounded shadow-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded font-semibold hover:bg-blue-700">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-400 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="footer-links mb-4 md:mb-0">
+                <a href="#home" class="mr-4 hover:text-white">Home</a>
+                <a href="#about" class="mr-4 hover:text-white">About</a>
+                <a href="#features" class="mr-4 hover:text-white">Features</a>
+                <a href="#pricing" class="mr-4 hover:text-white">Pricing</a>
+                <a href="#team" class="mr-4 hover:text-white">Team</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+            <div class="footer-social mb-4 md:mb-0">
+                <a href="#" class="mr-4"><img src="icon-facebook.png" alt="Facebook" class="h-6"></a>
+                <a href="#" class="mr-4"><img src="icon-twitter.png" alt="Twitter" class="h-6"></a>
+                <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" class="h-6"></a>
+            </div>
+            <div class="footer-contact text-center">
+                <p>&copy; 2024 Keepstone. All rights reserved.</p>
+                <p>Email: info@keepstone.com | Phone: 1-800-123-4567</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
